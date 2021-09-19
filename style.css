@@ -127,7 +127,7 @@ body {
 }
 
 .header__content {
-  padding-top: 80px;
+  padding-top: 24px;
   border-bottom: 1.8px solid #232323;
   padding-bottom: 24px;
 }
@@ -216,7 +216,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 30px;
 }
 
 .firstpage-navigation button {
