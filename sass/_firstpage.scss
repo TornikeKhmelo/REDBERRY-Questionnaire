@@ -62,14 +62,15 @@
 .firstpage-navigation {
     display: flex;
     justify-content: center;
-    
-
     button {
         margin-left: 100px;
         border: none;
         cursor: pointer;
-        margin-bottom: 30px;
+        
     }
+}
+.firstpage-nav-right{
+    margin-bottom: 30px;
 }
 .firstpage-alert {
     top: -46px;
