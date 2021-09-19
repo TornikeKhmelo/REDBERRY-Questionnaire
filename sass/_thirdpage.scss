@@ -1,6 +1,6 @@
 .thirdpage {
     &-left {
-        width: 700px;
+        width: 600px;
         margin-right: 20px;
         h3 {
             font-family: "Fira Sans";
@@ -63,12 +63,9 @@
 .thirdpage-nav-right {
     border: none;
     background-image: #eaeaea;
-    margin-bottom: 30px;
     &:disabled {
         opacity: 0.5;
         cursor: not-allowed;
     }
 }
-.thirdpage-nav-left{
-    margin-bottom: 30px;
-}
+

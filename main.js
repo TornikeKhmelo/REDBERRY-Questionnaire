@@ -16,7 +16,7 @@ $(".startpage-button")
       .addClass("uk-animation-slide-top")
       .dequeue();
   });
-//firstpage js
+//firstpage 
 function hideAndClearValues(elem) {
   elem.addClass("uk-hidden");
   elem.find(":input").each(function () {
