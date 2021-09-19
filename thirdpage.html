@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css"
+    />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
+    <title>აცრა</title>
+    <!-- favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container container-height">
+      <header class="header">
+        <div class="header__content uk-flex uk-flex-between uk-flex-middle">
+          <img src="images/redberryimage.png" alt="" />
+          <span>3/4</span>
+        </div>
+      </header>
+      <div class="uk-grid" uk-grid>
+        <div class="thirdpage-left uk-width-1-2">
+          <div class="thirdpage-first uk-flex uk-flex-column">
+            <h3>უკვე აცრილი ხარ?*</h3>
+            <div class="radio-item">
+              <input type="radio" id="ritemf" name="ritem" value="ropt1" />
+              <label for="ritemf">კი</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ritemg" name="ritem" value="ropt2" />
+              <label for="ritemg">არა</label>
+            </div>
+          </div>
+          <div class="thirdpage-second-yes uk-flex uk-flex-column uk-hidden">
+            <h3>აირჩიე რა ეტაპზე ხარ*</h3>
+            <div class="radio-item">
+              <input type="radio" id="ritemh" name="ritemh" value="ropt1" />
+              <label for="ritemh"
+                >პირველი დოზა და დარეგისტრირებული ვარ მეორეზე</label
+              >
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ritemm" name="ritemh" value="ropt2" />
+              <label for="ritemm">სრულად აცრილი ვარ</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ritemn" name="ritemh" value="ropt2" />
+              <label for="ritemn"
+                >პირველი დოზა და არ დავრეგისტრირებულვარ მეორეზე</label
+              >
+            </div>
+          </div>
+          <div class="thirdpage-third-yes uk-hidden">
+            <p>
+              რომ არ გადადო, ბარემ ახლავე დარეგისტრირდი
+              <a href="https://booking.moh.gov.ge/"
+                >https://booking.moh.gov.ge/</a
+              >
+            </p>
+          </div>
+          <div class="thirdpage-second-no uk-flex uk-flex-column uk-hidden">
+            <h3>რას ელოდები?*</h3>
+            <div class="radio-item">
+              <input type="radio" id="ritemx" name="ritemx" value="ropt1" />
+              <label for="ritemx"
+                >დარეგისტრირებული ვარ და ველოდები რიცხვს</label
+              >
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ritemy" name="ritemx" value="ropt2" />
+              <label for="ritemy">არ ვგეგმავ</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ritemz" name="ritemx" value="ropt2" />
+              <label for="ritemz">გადატანილი მაქვს და ვგეგმავ აცრას</label>
+            </div>
+          </div>
+          <div class="thirdpage-third-no uk-flex uk-flex-center uk-hidden">
+            <a href="https://booking.moh.gov.ge/"
+              >👉https://booking.moh.gov.ge/</a
+            >
+          </div>
+          <div
+            class="
+              thirdpage-fourth-no
+              uk-flex uk-flex-center uk-flex-column uk-hidden
+            "
+          >
+            <p>
+              ახალი პროტოკოლით კოვიდის გადატანიდან 1 თვის შემდეგ შეგიძლიათ
+              ვაქცინის გაკეთება
+            </p>
+            <span>
+              რეგისტრაციის ბმული
+              <a href="https://booking.moh.gov.ge/"
+                >👉https://booking.moh.gov.ge/</a
+              >
+            </span>
+          </div>
+        </div>
+        <div class="secondpage-right uk-width-1-2">
+          <img src="images/thirdpage.png" alt="thirdpage" />
+        </div>
+      </div>
+      <div class="firstpage-navigation">
+        <button
+          class="secondpage-nav-left"
+          onclick="location.href='secondpage.html'"
+        >
+          <img src="images/arrowleft.svg" alt="first_arrow" />
+        </button>
+        <button
+          class="thirdpage-nav-right"
+          onclick="location.href='fourthpage.html'"
+          disabled
+        >
+          <img src="images/first_arrow.svg" alt="first_arrow" />
+        </button>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
+</html>

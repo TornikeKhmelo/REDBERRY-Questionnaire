@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css"
+    />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
+    <title>კოვიდის კითხვარი</title>
+    <!-- favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container container-height">
+      <header class="header">
+        <div class="header__content uk-flex uk-flex-between uk-flex-middle">
+          <img src="images/redberryimage.png" alt="" />
+          <span>2/4</span>
+        </div>
+      </header>
+      <div class="uk-grid" uk-grid>
+        <div class="secondpage-left uk-width-1-2">
+          <div class="secondpage-first uk-flex uk-flex-column">
+            <h3>გაქვს გადატანილი Covid-19?*</h3>
+            <div class="radio-item">
+              <input type="radio" id="ritema" name="ritema" value="ropt1" />
+              <label for="ritema">კი</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ritemb" name="ritema" value="ropt2" />
+              <label for="ritemb">არა</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="ritemc" name="ritema" value="ropt2" />
+              <label for="ritemc">ახლა მაქვს</label>
+            </div>
+          </div>
+          <div class="secondpage-second uk-flex uk-flex-column uk-hidden">
+            <h3>ანტისხეულების ტესტი გაქვს გაკეთებული?*</h3>
+            <div class="radio-item">
+              <input type="radio" id="ritemd" name="ritemb" value="ropt1" />
+              <label for="ritemd">კი</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="riteme" name="ritemb" value="ropt2" />
+              <label for="riteme">არა</label>
+            </div>
+          </div>
+          <div class="secondpage-third uk-flex uk-flex-column uk-hidden">
+            <h3>
+              თუ გახსოვს, გთხოვ მიუთითე ტესტის მიახლოებითი რიცხვი და
+              ანტისხეულების რაოდენობა*
+            </h3>
+            <input
+              type="text"
+              class="secondpage-first-input"
+              placeholder="რიცხვი"
+              min="2018-01-01"
+              max="2021-09-20"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+            />
+            <input
+              type="text"
+              class="secondpage-first-number"
+              onfocus="(this.type='number')"
+              onblur="(this.type='text')"
+              placeholder="ანტისხეულების რაოდენობა"
+              min="0"
+              max="100"
+            />
+          </div>
+          <div class="secondpage-fourth uk-flex uk-flex-column uk-hidden">
+            <h3>
+              მიუთითე მიახლოებითი პერიოდი (დღე/თვე/წელი) როდის გქონდა Covid-19*
+            </h3>
+            <input
+              type="text"
+              class="secondpage-first-input"
+              id="secondpage-second-input"
+              placeholder="დდ/თთ/წწ"
+              min="2018-01-01"
+              max="2021-09-20"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+            />
+          </div>
+        </div>
+        <div class="secondpage-right uk-width-1-2">
+          <img src="images/secondpage.png" alt="" />
+        </div>
+      </div>
+      <div class="firstpage-navigation">
+        <button
+          class="secondpage-nav-left"
+          onclick="location.href='firstpage.html'"
+        >
+          <img src="images/arrowleft.svg" alt="first_arrow" />
+        </button>
+        <button
+          class="secondpage-nav-right"
+          onclick="location.href='thirdpage.html'"
+          disabled
+        >
+          <img src="images/first_arrow.svg" alt="first_arrow" />
+        </button>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
+</html>

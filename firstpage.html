@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/css/uikit.min.css"
+    />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.3/dist/js/uikit-icons.min.js"></script>
+    <title>იდენტიფიკაცია</title>
+    <!-- favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container container-height">
+      <header class="header">
+        <div class="header__content uk-flex uk-flex-between uk-flex-middle">
+          <img src="images/redberryimage.png" alt="" />
+          <span>1/4</span>
+        </div>
+      </header>
+      <div class="uk-flex">
+        <div class="firstpage-left">
+          <form class="firstpage-form" name="Form">
+            <div class="uk-flex uk-flex-column">
+              <label class="firstpage-label" for="fname">სახელი *</label>
+              <input
+                class="firstpage-input"
+                type="text"
+                id="fname"
+                name="fname"
+                minlength="3"
+                maxlength="255"
+                pattern="[A-Za-zა-ჰ]+"
+                onblur="validName"
+                placeholder="სახელი"
+                required
+              />
+            </div>
+            <div class="uk-position-relative firstpage-alert">
+              <p class="uk-position-absolute firstpage-alert-name"></p>
+            </div>
+            <div class="uk-flex uk-flex-column">
+              <label class="firstpage-label" for="lname">გვარი *</label>
+              <input
+                class="firstpage-input"
+                type="text"
+                id="lname"
+                name="lname"
+                minlength="3"
+                maxlength="255"
+                pattern="[A-Za-zა-ჰ]+"
+                onblur="validLname"
+                placeholder="გვარი"
+                required
+              />
+            </div>
+            <div class="uk-position-relative firstpage-alert">
+              <p class="uk-position-absolute firstpage-alert-lname"></p>
+            </div>
+            <div class="uk-flex uk-flex-column">
+              <label class="firstpage-label" for="email">მეილი *</label>
+              <input
+                class="firstpage-input"
+                type="email"
+                id="email"
+                pattern="[a-z0-9._%+-]+@redberry.ge"
+                placeholder="მეილი"
+                required
+              />
+            </div>
+            <div class="uk-position-relative firstpage-alert">
+              <p class="uk-position-absolute firstpage-alert-email"></p>
+            </div>
+          </form>
+          <hr class="firstpage-divider" />
+          <p class="firstpage-paragraph">
+            *-ით მონიშნული ველების შევსება სავალდებულოა
+          </p>
+        </div>
+        <div class="firstpage-right">
+          <img src="images/firstpage.png" alt="firstpage" />
+        </div>
+      </div>
+      <div class="firstpage-navigation">
+        <button
+          class="firstpage-nav-right"
+          onclick="location.href='secondpage.html'"
+          disabled
+        >
+          <img src="images/first_arrow.svg" alt="first_arrow" />
+        </button>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="main.js"></script>
+</html>

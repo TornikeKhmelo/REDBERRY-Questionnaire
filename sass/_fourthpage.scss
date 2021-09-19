@@ -1,0 +1,74 @@
+.fourthpage {
+    margin-bottom: 20px;
+    &-left {
+        margin-right: 200px;
+        width: 630px;
+        overflow: scroll;
+        overflow-x: hidden;
+        height: 600px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        p {
+            width: 598px;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 27px;
+            color: #232323;
+        }
+        h3 {
+            font-family: "Fira Sans";
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            color: #232323;
+            width: 700px;
+        }
+    }
+    &-right {
+        img {
+            height: 600px;
+        }
+    }
+    &-first,
+    &-second,
+    &-third {
+        margin-bottom: 44px;
+    }
+    &-fourth {
+        h3 {
+            width: 500px;
+        }
+        textarea {
+            resize: none;
+            border: 0.8px solid #232323;
+            background-color: #eaeaea;
+            width: 622px;
+            height: 184px;
+            margin-bottom: 50px;
+        }
+    }
+    &-navigation {
+        padding-bottom: 60px;
+    }
+}
+.finish-button {
+    display: flex;
+    justify-content: flex-end;
+}
+.fourthpage-btn-finish {
+    color: white;
+    background: #208298;
+    border-radius: 42px;
+    padding: 17px 29px;
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    &:disabled {
+        cursor: not-allowed;
+    }
+}

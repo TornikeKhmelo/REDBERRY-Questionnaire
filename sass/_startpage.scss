@@ -1,0 +1,57 @@
+.logo {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.mainlogo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__img {
+        width: 100vw;
+        height: 100vh;
+        animation: mymove 1s;
+    }
+}
+@keyframes mymove {
+    0% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 0%;
+        height: 0%;
+        border-radius: 75%;
+    }
+}
+.firstpage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstpage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainslogosmall {
+    margin-bottom: 100px;
+}
+.startpage-button {
+    border: none;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position-x: 58px;
+    background-color: #eaeaea;
+    cursor: pointer;
+    text-align: center;
+    &-img {
+        border: none;
+    }
+    &:hover {
+        background-image: url(../images/firstbut.png);
+    }
+}

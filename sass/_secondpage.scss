@@ -1,0 +1,94 @@
+.secondpage {
+  &-left {
+    width: 590px;
+    margin-right: 20px;
+    h3 {
+      font-family: "Fira Sans";
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      color: #232323;
+      width: 100%;
+    }
+  }
+  &-first {
+    margin-bottom: 50px;
+  }
+  &-second {
+    margin-bottom: 50px;
+  }
+
+  &-right {
+    margin-top: -40px;
+  }
+  &-third,
+  &-fourth {
+    input {
+      width: 513px;
+      height: 50px;
+      padding-left: 20px;
+      margin-bottom: 25px;
+      border: 0.8px solid #232323;
+      background-color: #eaeaea;
+    }
+  }
+  &-first-input {
+    margin-bottom: 25px;
+  }
+}
+
+.radio-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 6px;
+  margin: 10px 0 0;
+}
+
+.radio-item input[type="radio"] {
+  display: none;
+}
+
+.radio-item label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #232323;
+  margin-left: 20px;
+}
+
+.radio-item label:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  margin-right: 20px;
+  width: 23px;
+  height: 23px;
+  border-radius: 20px;
+  border: 1px solid #232323;
+  background-color: transparent;
+}
+
+.radio-item input[type="radio"]:checked + label:after {
+  border-radius: 20px;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  content: " ";
+  display: block;
+  background-color: #232323;
+}
+.secondpage-nav-left {
+  border: none;
+  background-color: #eaeaea;
+}
+.secondpage-nav-right {
+  border: none;
+  background-image: #eaeaea;
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}

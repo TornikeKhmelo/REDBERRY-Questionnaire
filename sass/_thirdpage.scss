@@ -1,0 +1,70 @@
+.thirdpage {
+    &-left {
+        width: 700px;
+        margin-right: 20px;
+        h3 {
+            font-family: "Fira Sans";
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            color: #232323;
+        }
+    }
+    &-first {
+        margin-bottom: 50px;
+    }
+    &-second-yes {
+        margin-bottom: 40px;
+    }
+    &-third-yes {
+        display: flex;
+        justify-content: center;
+        p {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            color: #232323;
+            width: 350px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    &-second-no {
+        margin-bottom: 40px;
+    }
+    &-third-no {
+        a {
+            font-size: 20px;
+            line-height: 24px;
+            width: 350px;
+        }
+    }
+    &-fourth-no {
+        width: 450px;
+        p,
+        span {
+            margin-left: 130px;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            color: #232323;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+.thirdpage-third-no {
+    a:hover {
+        text-decoration: none;
+    }
+}
+.thirdpage-nav-right {
+    border: none;
+    background-image: #eaeaea;
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
