@@ -14,9 +14,13 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1220px;
+  max-width: 1500px;
   width: 100%;
   padding: 0 20px;
+}
+
+.container-height {
+  height: 100vh;
 }
 
 .logo {
@@ -212,7 +216,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .firstpage-navigation button {
@@ -410,16 +414,11 @@ body {
 .thirdpage-nav-right {
   border: none;
   background-image: #eaeaea;
-  margin-bottom: 30px;
 }
 
 .thirdpage-nav-right:disabled {
   opacity: 0.5;
   cursor: not-allowed;
-}
-
-.thirdpage-nav-left {
-  margin-bottom: 30px;
 }
 
 .fourthpage {
