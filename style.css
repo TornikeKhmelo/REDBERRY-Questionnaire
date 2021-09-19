@@ -241,7 +241,7 @@ body {
 
 .secondpage-left {
   width: 590px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .secondpage-left h3 {
@@ -262,7 +262,7 @@ body {
 }
 
 .secondpage-right {
-  margin-top: -40px;
+  max-width: 600px;
 }
 
 .secondpage-third input, .secondpage-fourth input {

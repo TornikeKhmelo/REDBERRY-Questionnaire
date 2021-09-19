@@ -1,7 +1,7 @@
 .secondpage {
   &-left {
     width: 590px;
-    margin-right: 20px;
+    margin-right: 40px;
     h3 {
       font-family: "Fira Sans";
       font-weight: bold;
@@ -19,7 +19,7 @@
   }
 
   &-right {
-    margin-top: -40px;
+    max-width: 600px;
   }
   &-third,
   &-fourth {
